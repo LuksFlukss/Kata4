@@ -14,6 +14,7 @@ public class MailHistogramReader {
         List<Mail> list = new ArrayList<>();
         
         try {
+            System.out.println(nameFile);
             BufferedReader reader = new BufferedReader(new FileReader(new File(nameFile)));
             while(true){
                 String line = reader.readLine();
@@ -35,5 +36,6 @@ public class MailHistogramReader {
         return list;
        
     }
+
     
 }
